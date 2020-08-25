@@ -1,0 +1,24 @@
+package format;
+
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
+import java.util.Locale;
+
+import com.sun.org.apache.xerces.internal.impl.dv.dtd.NMTOKENDatatypeValidator;
+
+public class FormatCoin {
+	public static void main(String[] args) {
+		double l = 9843456789.237;
+		Locale locate = new Locale("vi", "VN");
+		NumberFormat num = NumberFormat.getCurrencyInstance(locate);
+		num.setRoundingMode(RoundingMode.HALF_UP);
+		System.out.println(num.format(l));
+		
+		DecimalFormat num2  = DecimalFormat.getInstance(locate);
+		DecimalFormatSymbols sim = new DecimalFormatSymbols();
+		sim.setCurrencySymbol("vnd");
+
+	}
+}

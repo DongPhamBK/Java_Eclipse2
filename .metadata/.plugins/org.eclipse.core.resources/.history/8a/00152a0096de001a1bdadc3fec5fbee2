@@ -1,0 +1,20 @@
+package format;
+
+import java.text.NumberFormat;
+import java.util.Locale;
+
+public class FormatNumber {
+public static void main(String[] args) {
+	long l = 1234567;
+	double d = 83778412.3491;
+	double s = 123.1;
+	
+	Locale locate = new Locale("vi", "VN");// định dạng kiểu Việt Nam
+	NumberFormat ds = NumberFormat.getInstance(locate);// hay v
+	
+	ds.setMaximumFractionDigits(2);// số kí tự sau
+	ds.setMinimumFractionDigits(2);
+	System.out.println(ds.format(l));
+	System.out.println(ds.format(d));
+}
+}

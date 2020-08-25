@@ -1,0 +1,22 @@
+package connect;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import com.mysql.jdbc.JDBC4Connection;
+import java.sql.Statement;
+
+public class ResultDB {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+try {
+	Connection conn = MySQLConnect.getJDBCconnection();
+	Statement statement  = conn.createStatement();
+} catch (SQLException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+	}
+
+}

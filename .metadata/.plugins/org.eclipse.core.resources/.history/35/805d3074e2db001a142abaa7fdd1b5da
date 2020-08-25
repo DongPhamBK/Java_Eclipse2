@@ -1,0 +1,20 @@
+package object;
+
+public class Person {
+ @Override
+public boolean equals(Object obj) {
+	// TODO Auto-generated method stub
+	//return super.equals(obj);
+	 
+	 if(obi instanceof Person){
+		 
+	 }else
+		 return false;
+}
+ 
+ @Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return super.hashCode();
+	}
+}

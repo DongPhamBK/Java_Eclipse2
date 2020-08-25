@@ -1,0 +1,15 @@
+package queuee;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class queueDemo {
+	public static void main(String[] args) {
+		Queue<String> q = new LinkedList<String>();
+
+		q.add("a");
+		q.add("z");
+		q.add("f");
+		q.add("b");
+	}
+}

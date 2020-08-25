@@ -1,0 +1,10 @@
+package list;
+import java.util.*;
+public class LinkedListMain {
+public static void main(String[] args) {
+	Person a1 = new Person(1);
+	List<Person> linklis = new LinkedList<Person>();// danh sách liên kết
+	linklis.add(a1);
+	System.out.println(linklis.get(0).getId());// lưu ý lấy idex rồi lấy giá trị
+}
+}

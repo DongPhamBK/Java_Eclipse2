@@ -1,0 +1,11 @@
+package sett;
+
+import java.util.Set;
+
+public class LinkeHashSet {
+public static void main(String[] args) {
+	Set<Person> set = new LinkedHashSet<Person>();
+	
+	
+}
+}

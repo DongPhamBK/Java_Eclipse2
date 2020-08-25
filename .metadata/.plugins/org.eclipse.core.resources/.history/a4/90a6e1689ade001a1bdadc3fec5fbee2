@@ -1,0 +1,18 @@
+package format;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
+public class FormatDate {
+public static void main(String[] args) {
+	
+	String pattern = "dd-MM-YYYY";
+	String pattern2 = "dd-MM-YYYY hh:mm a";
+	SimpleDateFormat p = new SimpleDateFormat(pattern);
+	System.out.println(p.format(new Date()));
+	SimpleDateFormat p1 = new SimpleDateFormat(pattern2,new Locale("vi", "VN"));
+	System.out.println(p1.format(new Date()));
+	// thế có phải nhanh hơn không !!!
+}
+}

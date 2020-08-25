@@ -1,0 +1,10 @@
+package connect;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+public class SQLConnect {
+	
+public static Connection getJDBCConnection(){
+	class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver")
+}
+}

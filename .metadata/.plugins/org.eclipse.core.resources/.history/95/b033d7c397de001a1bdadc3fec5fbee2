@@ -1,0 +1,11 @@
+package format;
+
+import java.util.Locale;
+
+public class FormatCoin {
+public static void main(String[] args) {
+	long l = 9843456789l;
+	Locale locate  = new Locale("vi", "VN");
+	
+}
+}

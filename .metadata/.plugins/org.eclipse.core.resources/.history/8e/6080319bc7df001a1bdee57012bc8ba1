@@ -1,0 +1,10 @@
+package connect;
+
+public class ResultDB {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

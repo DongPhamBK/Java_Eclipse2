@@ -1,0 +1,18 @@
+package sett;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class DemoSet {
+	public static void main(String[] args) {
+		Set<String> se = new HashSet<String>();
+		se.add("a");
+		se.add("b");
+		se.add("b");
+		se.add("d");
+		
+		for(String i:se){
+			System.out.println(i);
+		}
+	}
+}

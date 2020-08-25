@@ -1,0 +1,16 @@
+package connect;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+public class SQLConnect {
+	
+public static void getJDBCConnection(){
+	
+	try {
+		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+	} catch (ClassNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+}

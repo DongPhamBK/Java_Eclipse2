@@ -1,0 +1,13 @@
+package mapmap;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Demo {
+public static void main(String[] args) {
+	Map<Integer, String> m = new HashMap<Integer, String>();// lưu ý là Interger
+	m.put(1, "a");
+	m.put(2, "s");
+	m.put(2, "s");
+} 
+}

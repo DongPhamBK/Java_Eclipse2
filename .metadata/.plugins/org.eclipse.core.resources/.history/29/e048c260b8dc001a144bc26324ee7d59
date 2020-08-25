@@ -1,0 +1,20 @@
+package list;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SapXep {
+public static void main(String[] args) {
+	
+	List<String> az = new ArrayList<String>();
+	
+	az.add("a");
+	az.add("d");
+	az.add("k");
+	az.add("g");
+	
+	for(String i : az){
+		System.out.println(i);
+	}
+}
+}

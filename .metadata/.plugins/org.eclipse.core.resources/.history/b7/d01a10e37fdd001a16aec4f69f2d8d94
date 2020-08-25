@@ -1,0 +1,13 @@
+package string;
+
+public class StringDemo {
+public static void main(String[] args) {
+	String s = "Hello";
+	String a;
+	s = s+ "j";
+	
+	StringBuilder bu = new StringBuilder();
+	bu.append("mới");
+	
+}
+}

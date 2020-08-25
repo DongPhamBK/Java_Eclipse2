@@ -1,0 +1,9 @@
+ package format;
+
+public class Convert {
+public static void main(String[] args) {
+	String ng  = "10-03-2019";
+	String pattern = "dd-MM-YYYY";
+	
+}
+}

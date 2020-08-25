@@ -1,0 +1,14 @@
+package object;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Person n1 = new Person(1, "A");
+		Person n2 = new Person(1, "A");
+
+		System.out.println(n1 == n2);
+	}
+
+}

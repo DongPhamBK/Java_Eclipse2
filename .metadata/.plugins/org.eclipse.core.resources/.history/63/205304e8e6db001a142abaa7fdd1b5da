@@ -1,0 +1,21 @@
+package object;
+
+public class Intro {
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		// return super.equals(obj);
+// ta thử thay đổi xem sao !!!
+		if (obj instanceof Person) {
+			return true;
+		} else
+			return false;
+	}
+
+	@Override
+	public int hashCode() {
+		//// TODO Auto-generated method stub
+		//return super.hashCode();
+		return 10;// sửa lại theo ý thôi !!!
+	}
+}

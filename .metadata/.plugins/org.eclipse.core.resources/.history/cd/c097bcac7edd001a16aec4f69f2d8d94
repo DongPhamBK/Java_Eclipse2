@@ -1,0 +1,22 @@
+package mapmap;
+
+import java.util.Map;
+import java.util.TreeMap;
+import java.util.Map.Entry;
+
+public class TreeMapping {
+	public static void main(String[] args) {
+		Map<Integer, String> k = new TreeMap<Integer, String>();
+		k.put(1, "a");
+		k.put(2, "s");// key là duy nhất, nếu không sẽ bị ghi đè
+		k.put(3, "ss");// chứ ko phải add
+		k.put(4, "qw");
+		k.put(null, "null");
+		
+		// tương tự thôi !!!
+		
+		for (Entry<Integer, String> o : k.entrySet()) {
+			System.out.println(o.getKey() + " " + o.getValue());
+		}
+	}
+}

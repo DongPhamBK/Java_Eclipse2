@@ -1,0 +1,11 @@
+package format;
+
+import java.text.SimpleDateFormat;
+
+public class FormatDate {
+public static void main(String[] args) {
+	
+	String pattern = "dd-MM-YYYY";
+	SimpleDateFormat p = new SimpleDateFormat(pattern);
+}
+}

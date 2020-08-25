@@ -1,0 +1,47 @@
+package object;
+
+public class Person {
+
+	private int id;
+
+	private String ten;
+
+	public Person(int id, String ten) {
+		super();
+		this.id = id;
+		this.ten = ten;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getTen() {
+		return ten;
+	}
+
+	public void setTen(String ten) {
+		this.ten = ten;
+	}
+
+	@Override // ghi đè equals
+	public boolean equals(Object obj) {
+		if (obj instanceof Person) {
+			Person p2 = ((Person) obj);// ép kiểu cho chắc, vì instanceof cũng
+										// chưa chắc cú đâu !!!
+			if (p2.getId() == this.getId()) {// this là cái hiện tại, còn cái
+												// kia thì truyền vào
+				return true;
+			} else {
+				return false;
+			}
+		} else {
+			return false;
+		}
+	}
+
+}

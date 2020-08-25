@@ -1,0 +1,17 @@
+package format;
+
+import java.text.NumberFormat;
+import java.util.Locale;
+
+import com.sun.org.apache.xerces.internal.impl.dv.dtd.NMTOKENDatatypeValidator;
+
+public class FormatCoin {
+public static void main(String[] args) {
+	long l = 9843456789l;
+	Locale locate  = new Locale("vi", "VN");
+	NumberFormat num = NumberFormat.getCurrencyInstance(locate);
+	num.setRoundingMode(4);
+	System.out.println(num.format(l));
+	
+}
+}

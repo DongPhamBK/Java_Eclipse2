@@ -1,0 +1,8 @@
+package list;
+import java.util.*;
+public class LinkedList {
+public static void main(String[] args) {
+	Person a1 = new Person(1);
+	List<Person> linklis = new LinkedList<Person>();
+}
+}

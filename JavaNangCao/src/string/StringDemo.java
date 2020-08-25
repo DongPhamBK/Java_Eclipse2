@@ -1,0 +1,21 @@
+package string;
+
+public class StringDemo {
+public static void main(String[] args) {
+	String s = "Hello";
+	String a;
+	s = s+ "j";
+	
+	StringBuilder bu = new StringBuilder();
+	bu.append("mới ");
+	bu.append("nối thêm");// se thành mới nối thêm !
+	
+	String ss  = bu.toString();// chuyển về string thường!
+	System.out.println(ss);
+	
+	StringBuffer up = new StringBuffer();
+	up.append("Lâu hơn bulder");
+	System.out.println(up.toString());
+	
+}
+}

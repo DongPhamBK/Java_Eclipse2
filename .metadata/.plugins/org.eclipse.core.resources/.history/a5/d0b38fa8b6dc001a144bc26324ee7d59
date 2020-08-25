@@ -1,0 +1,25 @@
+package list;
+
+public class Person {
+	private int id;
+
+	public Person(int id) {
+		super();
+		this.id = id;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	// ta làm over với 2 đối tượng mà giống id thì coi như là 1, hơi khó hiểu
+	// xíu !
+	@Override
+	public boolean equals(Object obj) {
+		return (obj instanceof Person) ? (((Person) obj).getId() == this.getId()) : false;
+	}
+}

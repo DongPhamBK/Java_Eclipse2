@@ -1,0 +1,15 @@
+package connect;
+
+import java.sql.Connection;
+
+import com.mysql.jdbc.JDBC4Connection;
+import java.sql.Statement;
+
+public class ResultDB {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Statement statement  = MySQLConnect.getJDBCconnection().createStatement();
+	}
+
+}
